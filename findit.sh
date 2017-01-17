@@ -2,7 +2,7 @@
 
 # Here's an example code to play with/re-write to do the first homework assignment.
 #
-# In /project/projectdirs/astro250/data we have a set of fits files as well as catalogs
+# In /project/projectdirs/astro250/data/hwk1 we have a set of fits files as well as catalogs
 # from these fits files. They are named the same save for the suffix (.fits or .cat). 
 # Some of the .cat files are missing. Write a bash shell script which takes as input 
 # the directory name and prints out the names of the .fits files which are missing their 
