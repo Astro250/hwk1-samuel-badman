@@ -1,6 +1,6 @@
 #/bin/bash
 
-# Here's the first line of code to play write to do the first homework assignment.
+# Here's the first line of code to write to do the first homework assignment.
 #
 # In /scratch2/scratchdirs/nugent/astro250/hwk1 we have a set of fits files as well as catalogs
 # from these fits files. They are named the same save for the suffix (.fits or .cat). 
