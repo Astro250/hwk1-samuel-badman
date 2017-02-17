@@ -12,3 +12,23 @@
 
 dir=$1
 
+#First, check input directory (argument 1 on command line) is a true directory.
+
+if [ ! -d $dir ]; then
+	echo "Error: $dir is not a directory, please enter a correct director."
+else
+	echo "Searching $dir for files ending .fits without corresponding .cat files:"
+	echo " "
+
+#If so, for each .fits file in the inputted directory, see if the filename with .cat replacing 
+# .fits is a file which exists in this directory. If so, print out it's name (filename only),
+# stripping off the path name.
+
+	for f in $dir*.fits; do
+		nf="${f%.*}.cat"
+		if [ ! -e "$nf" ]; then
+			echo "Filename: $(basename $f)"
+		fi
+	done
+fi
+
