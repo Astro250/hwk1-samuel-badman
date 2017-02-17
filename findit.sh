@@ -15,7 +15,7 @@ dir=$1
 #First, check input directory (argument 1 on command line) is a true directory.
 
 if [ ! -d $dir ]; then
-	echo "Error: $dir is not a directory, please enter a correct director."
+	echo "Error: $dir is not a directory, please enter a correct directory as the second argument in the command line call."
 else
 	echo "Searching $dir for files ending .fits without corresponding .cat files:"
 	echo " "
